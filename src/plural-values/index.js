@@ -10,8 +10,8 @@ const pluralValues = {
       'Фамилия может содержать только буквы русского, латинского алфавита и дефис. Не более 20 символов.',
   },
   email: {
-    first: 'Email адрес',
-    second: "Email адрес должен быть в формате 'address@domain.com'",
+    first: 'E-mail адрес',
+    second: "E-mail адрес должен быть в формате 'address@domain.com'",
   },
   password: {
     first: 'пароль',
