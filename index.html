@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>E2E4 Test Task</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="layout">
+    <div class="layout__header">
+      <div class="layout__header-content">
+        <div class="layout__header-title">Место для Вашего Логотипа</div>
+      </div>
+    </div>
+    <div class="layout__content">
+      <div class="content">
+        <div class="content__title">Регистрация</div>
+        <form class="form" id="form" novalidate>
+          <fieldset class="form__fields">
+            <div class="form__field">
+              <label for="firstName" class="form__field-label">Имя</label>
+              <input type="text" id="firstName" required pattern="[^-'][^0-9]|[A-Za-zА-Яа-яЁё'-]{2,20}[^-]$"
+                class="form__field-input">
+              <span class="form__field-error"></span>
+            </div>
+            <div class="form__field">
+              <label for="lastName" class="form__field-label">Фамилия</label>
+              <input type="text" id="lastName" required pattern="[^-'][^0-9]|[A-Za-zА-Яа-яЁё'-]{2,20}[^-]$"
+                class="form__field-input">
+              <span class="form__field-error"></span>
+            </div>
+            <div class="form__field">
+              <label for="email" class="form__field-label">Email</label>
+              <input id="email" type="email" required pattern="[a-zA-Z]{5,30}@[a-zA-Z]{2,30}\.[a-z]{2,10}"
+                class="form__field-input">
+              <span class="form__field-error"></span>
+            </div>
+            <div class="form__field">
+              <label for="password" class="form__field-label">Пароль</label>
+              <input type="password" id="password" required
+                pattern="(?=.*[а-я])(?=.*[А-Я])(?=.*[0-9]).{8,}|(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}"
+                class="form__field-input">
+              <span class="form__field-error"></span>
+            </div>
+            <div class="form__field">
+              <label for="confirmPassword" class="form__field-label">Подтверждение Пароля</label>
+              <input type="password" id="confirmPassword" required class="form__field-input">
+              <span class="form__field-error"></span>
+            </div>
+            <div class="form__field">
+              <label for="birthDay" class="form__field-label">Дата рождения</label>
+              <input type="date" id="birthDay" required class="form__field-input">
+              <span class="form__field-error"></span>
+            </div>
+
+          </fieldset>
+          <div class="form__button">
+            <button class="s-button" id="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="layout__footer">
+      <div class="layout__footer-content">
+        Николай Ржевский ©
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
