@@ -1,4 +1,4 @@
-import './style.css';
+import './styles.css';
 import formValidator from './utils/form-validator';
 import pluralValues from './plural-values';
 import passwordComparison from './utils/password-comparison';
