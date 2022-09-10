@@ -10,7 +10,7 @@ const passwordComparison = (pass, confPass, confPassError) => {
       confPassError.textContent = '';
       confPassError.className = 'form__field-error';
     } else {
-      confPassError.textContent = 'Пароли должны совпадать';
+      confPassError.textContent = 'Пароли должны совпадать.';
     }
   });
 };

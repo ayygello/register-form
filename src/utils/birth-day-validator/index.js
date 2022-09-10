@@ -20,7 +20,7 @@ const birthDayValidator = (bDay, bDayError) => {
       if (bDay.validity.valueMissing) {
         bDayError.textContent = `Необходимо ввести дату рождения.`;
       } else if (bDay.validity.rangeOverflow) {
-        bDayError.textContent = 'Вам должно быть не меньше 18 лет.';
+        bDayError.textContent = 'Вам должно быть не менее 18 лет.';
       }
 
       submit.setAttribute('disabled', 'true');
