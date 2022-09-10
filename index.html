@@ -20,13 +20,15 @@
           <fieldset class="form__fields">
             <div class="form__field">
               <label for="firstName" class="form__field-label">Имя</label>
-              <input type="text" id="firstName" required pattern="[^-'][^0-9]|[A-Za-zА-Яа-яЁё'-]{2,20}[^-]$"
+              <input type="text" id="firstName" required
+                pattern="[^-']|[A-Za-zА-Яа-яЁё]{2,10}-{0,1}(?=[A-Za-zА-Яа-яЁё])[A-Za-zА-Яа-яЁё]*[^-']$"
                 class="form__field-input">
               <span class="form__field-error"></span>
             </div>
             <div class="form__field">
               <label for="lastName" class="form__field-label">Фамилия</label>
-              <input type="text" id="lastName" required pattern="[^-'][^0-9]|[A-Za-zА-Яа-яЁё'-]{2,20}[^-]$"
+              <input type="text" id="lastName" required
+                pattern="[^-']|[A-Za-zА-Яа-яЁё]{2,10}-{0,1}(?=[A-Za-zА-Яа-яЁё])[A-Za-zА-Яа-яЁё]*[^-']$"
                 class="form__field-input">
               <span class="form__field-error"></span>
             </div>
