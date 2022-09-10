@@ -5,7 +5,7 @@ import passwordComparison from './utils/password-comparison';
 import birthDayValidator from './utils/birth-day-validator';
 
 const elements = {
-  submit: document.getElementById('submit'),
+  form: document.getElementById('form'),
   name: document.getElementById('firstName'),
   nameError: document.querySelector('#firstName + span.form__field-error'),
   lastName: document.getElementById('lastName'),
@@ -23,38 +23,45 @@ const elements = {
 };
 
 formValidator(
-  elements.submit,
+  elements.form,
   elements.name,
   elements.nameError,
   pluralValues.name
 );
 
 formValidator(
-  elements.submit,
+  elements.form,
   elements.lastName,
   elements.lastNameError,
   pluralValues.lastName
 );
 
 formValidator(
-  elements.submit,
+  elements.form,
   elements.email,
   elements.emailError,
   pluralValues.email
 );
 
 formValidator(
-  elements.submit,
+  elements.form,
   elements.password,
   elements.passwordError,
   pluralValues.password
 );
 
 formValidator(
-  elements.submit,
+  elements.form,
   elements.confPass,
   elements.confPassError,
   pluralValues.password
+);
+
+formValidator(
+  elements.form,
+  elements.birthDay,
+  elements.birthDayError,
+  pluralValues.birthDay
 );
 
 passwordComparison(

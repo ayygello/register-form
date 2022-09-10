@@ -12,18 +12,11 @@ const birthDayValidator = (bDay, bDayError) => {
     bDay.setAttribute('max', date);
 
     if (bDay.validity.valid) {
-      bDayError.textContent = '';
-      bDayError.className = 'form__field-error';
       bDay.removeAttribute('max');
-      submit.removeAttribute('disabled');
     } else {
-      if (bDay.validity.valueMissing) {
-        bDayError.textContent = `Необходимо ввести дату рождения.`;
-      } else if (bDay.validity.rangeOverflow) {
+      if (bDay.validity.rangeOverflow) {
         bDayError.textContent = 'Вам должно быть не менее 18 лет.';
       }
-
-      submit.setAttribute('disabled', 'true');
     }
   });
 };

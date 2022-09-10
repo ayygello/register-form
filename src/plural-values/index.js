@@ -18,6 +18,9 @@ const pluralValues = {
     second:
       'Пароль должен содержать одну цифру, одну заглавную и строчную букву и один символ. Минимум 8 символов.',
   },
+  birthDay: {
+    first: 'дату рождения',
+  },
 };
 
 export default pluralValues;
